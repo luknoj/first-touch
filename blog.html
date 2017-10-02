@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Citi Places</title>
+	<title>First Touch</title>
 	<link rel="stylesheet" type="text/css" href="blog.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
@@ -10,7 +10,7 @@
 <div class="wraper">
 		<header class="header">
 			<div class="container">
-				<div class="logo">
+				<div class="logo" id="logo">
 					<div class="svg-container">
 						<svg xmlns="http://www.w3.org/2000/svg" width="432.135" height="125.813" viewBox="0 0 432.135 125.813">
 						    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="39.928" y1="25.125" x2="39.928" y2="139.179">
@@ -247,22 +247,37 @@
 						</svg>						
 					</div>
 				</div>
-				<div class="nav-bar">
+				<div class="nav-bar" id="navigation">
 					<ul>
-						<li><a href="./index.html">Citi places</a></li>
-						<li><a href="./pricing.html">Pricing</a></li>
-						<li><a href="./blog.html">Blog</a></li>
-						<li><a href="./contact.html">Contact</a></li>
+						<li>
+							<a class="icon" href="javascript:void(0);" onclick="myFunction()">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</a>
+						</li>
+						<li>
+							<a href="./index.html">First Touch</a>
+						</li>
+						<li>
+							<a href="./pricing.html">Pricing</a>
+						</li>
+						<li>
+							<a href="./blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="./contact.html">Contact</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</header>
 		<div class="content">
 			<main>
-				<section style="background-image: url(http://citiplaces.co.uk/wp-content/uploads/2017/08/header-blog.jpg)" class="page-header section-padding">
+				<section style="background-image: url(./img/blog.jpg)" class="page-header section-padding">
 					<div class="container">
 						<div class="title">
-							<p>Citi Places Blog</p>
+							<p>First Touch Blog</p>
 						</div>
 					</div>
 				</section>
@@ -271,7 +286,7 @@
 						<div class="col">
 							<div class="row">
 								<div class="post">
-									<div class="image" style="background-image:  url(http://citiplaces.co.uk/wp-content/uploads/2017/08/08b51798-ae82-3245-b236-dbd12aeab73b.jpg)">
+									<div class="image" style="background-image:  url(./img/blog-1.jpg)">
 									</div>
 									<div class="heading">
 										<div class="date">
@@ -284,7 +299,7 @@
 									</div>
 								</div>
 								<div class="post">
-									<div class="image" style="background-image:  url(http://citiplaces.co.uk/wp-content/uploads/2017/08/08b51798-ae82-3245-b236-dbd12aeab73b.jpg)">
+									<div class="image" style="background-image:  url(./img/blog-1.jpg)">
 									</div>
 									<div class="heading">
 										<div class="date">
@@ -297,7 +312,7 @@
 									</div>
 								</div>
 								<div class="post">
-									<div class="image" style="background-image:  url(http://citiplaces.co.uk/wp-content/uploads/2017/08/08b51798-ae82-3245-b236-dbd12aeab73b.jpg)">
+									<div class="image" style="background-image:  url(./img/blog-1.jpg)">
 									</div>
 									<div class="heading">
 										<div class="date">
@@ -312,7 +327,7 @@
 							</div>
 							<div class="row">
 								<div class="post">
-									<div class="image" style="background-image:  url(http://citiplaces.co.uk/wp-content/uploads/2017/08/08b51798-ae82-3245-b236-dbd12aeab73b.jpg)">
+									<div class="image" style="background-image:  url(./img/blog-1.jpg)">
 									</div>
 									<div class="heading">
 										<div class="date">
@@ -325,7 +340,7 @@
 									</div>
 								</div>
 								<div class="post">
-									<div class="image" style="background-image:  url(http://citiplaces.co.uk/wp-content/uploads/2017/08/08b51798-ae82-3245-b236-dbd12aeab73b.jpg)">
+									<div class="image" style="background-image:  url(./img/blog-1.jpg)">
 									</div>
 									<div class="heading">
 										<div class="date">
@@ -338,7 +353,7 @@
 									</div>
 								</div>
 								<div class="post">
-									<div class="image" style="background-image:  url(http://citiplaces.co.uk/wp-content/uploads/2017/08/08b51798-ae82-3245-b236-dbd12aeab73b.jpg)">
+									<div class="image" style="background-image:  url(./img/blog-1.jpg)">
 									</div>
 									<div class="heading">
 										<div class="date">
@@ -374,15 +389,29 @@
 		<div class="container-fluid">
 			<div class="col-8">
 				<ul>
-					<li><a href=""><span>Citi Places</span></a></li>
+					<li><a href=""><span>First Touch</span></a></li>
 					<li><a href=""><span>Pricing</span></a></li>
 					<li><a href=""><span> Blog</span></a></li>
 					<li><a class="last" href=""><span>Contact Details</span></a></li>
 				</ul>
 			</div>
 			<div class="col-4">
-				<p class="footer-rights">© Citi Places. All rights reserved.</p>
+				<p class="footer-rights">© First Touch. All rights reserved.</p>
 			</div>
 		</div>
+<script type="text/javascript">
+	function myFunction() {
+	    var x = document.getElementById("navigation");
+	    var y = document.getElementById("logo")
+	    if (x.className === "nav-bar") {
+	        x.className += " toggle";
+	        y.className += " absolute";
+
+	    } else {
+	    	x.className = "nav-bar";
+	    	y.className = "logo"
+	    	}
+	}
+</script>
 </footer>
 </html>
