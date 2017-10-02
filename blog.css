@@ -1,0 +1,355 @@
+*, :after, :before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.section-padding{
+	padding: 4.5rem 0;
+}
+.section-padding-end {padding: 5.3rem 0;}
+body {
+	-webkit-font-smoothing: antialiased;
+}
+.wraper {
+	display: flex;
+	flex-wrap: wrap;
+}
+.text-center {
+	text-align: center;
+}
+.container {
+	font-size: 0; 
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 75rem;
+}
+@media screen and (max-width: 1280px) {
+	.container {
+		font-size: 0; 
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+	}	
+}
+@media screen and (min-width: 1281px) {
+	.boxes .container {
+		font-size: 0; 
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+		width: 75rem;
+	}	
+}
+.container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.container-fluid:after, .container-fluid:before {
+	content: " ";
+	display: table;
+}
+.container-fluid:after {
+	clear: both;
+}
+.container-fluid:before {
+	content: " ";
+	display: table;
+}
+.svg-container {
+	fill: white;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	max-height: 100%;
+	width: 13rem;
+	height: 7rem;
+	position: relative;
+}
+.svg-container svg {
+	width: inherit;
+	height: inherit;
+}
+											/*Header*/
+.header {
+	min-height: 120px;
+	position: relative;
+	background: black;
+	width: 100%;
+	margin-bottom: 0;
+}
+.header:after {
+    clear: both;
+}
+.header:after, .header:before {
+    content: " ";
+    display: table;
+}
+.container:after {
+    clear: both;
+}
+.container:after, .container:before {
+    content: " ";
+    display: table;
+}
+.logo {
+	color: white;
+	width: 30%;
+	float: left;
+	display: inline-block;
+}
+.nav-bar {
+	width: 70%;
+	float: right;
+	text-align: right;
+}
+
+.nav-bar > ul {
+	display: inline-block;
+	text-decoration: none;
+}
+.nav-bar > ul > li {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.1rem;
+	padding-top: 42px;
+	padding-bottom: 47px;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: inline-block;
+}
+.nav-bar > ul > li > a {
+	color: white;
+	text-decoration: inherit;
+	padding-bottom: 3px;
+	transition: all .3s ease;
+
+}
+.nav-bar > ul > li:hover > a:after {
+	margin-top: 3px;
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.nav-bar > ul > li:hover > a:hover {
+	color: orange;
+}
+.nav-bar > ul > li:hover > a:hover:after {
+	width: 100%;
+	background: orange;
+}
+
+										/*Page header*/
+.content {
+	width: 100%;
+}
+.page-header * {
+	position: relative;
+}
+.page-header{
+	width: 100%;
+	background: 50% 50%/cover no-repeat;
+	margin: 0;
+	position: relative;
+}
+.page-header:before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0, .5);
+}
+.page-header .title {
+	font-family: Playfair Display,serif;
+	font-weight: 100;
+	color: white;
+	font-size: 3rem;
+	text-align: center;
+}
+.page-header .title p {
+	clear: both;
+}
+										/*BLOG POSTS*/
+.blog-posts {
+
+}
+.row {
+	display: table;
+	padding-bottom: 4rem;
+}
+.col {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+.blog-posts .post {
+	display: inline-block;
+	width: 33%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.post .image {
+	background: #cbcaca 50% 50%/cover;
+	display: block;
+	padding-bottom: 75%;
+	position: relative;
+}
+.post .image:after {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background: orange;
+	transition: all .3s ease;
+}
+.post .heading {
+	display: flex;
+	margin-top: 2rem;
+}
+.post .date {
+	width: 3.1rem;
+	height: 3.1rem;
+	margin-right: 2rem;
+	background-color: orange;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-family: Poppins,sans-serif;
+}
+.post .date p:first-child {
+	font-size: 0.9rem;
+	font-weight: 700;
+	margin-top: .7rem;
+	line-height: 1;
+	font-style: uppercase;
+}
+.post .date p:last-child {
+	font-size: 0.9rem;
+	line-height: 1;
+	font-weight: 300;
+}
+.post .h-title {
+	font-weight: 100;
+	text-align: left;
+	flex: 1;
+	font-size: 1.2rem;
+	font-family: Poppins,sans-serif;
+	transition: all .3s ease;
+}
+.post:hover .h-title {
+	color: orange;
+}
+.post:hover .image:after {
+	opacity: .7;
+}
+	/* PAGINATION */
+.pagination {
+	font-family: "Poppins", sans-serif;
+	display: inline-block;
+	margin: 0;
+}
+.pagination  > li {
+	display: inline;
+}
+.pagination  li > a {
+	float: left;
+	font-size: 14px; 
+    color: silver;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+    transition: all .3s ease;
+    border: 1px solid #ddd;
+    margin-left: 0;
+    margin-right: 0.5rem; 
+}
+
+.pagination > li > a.active {
+	font-weight: bold;
+	color: orange;
+    border: 1px solid orange;
+}
+.pagination > li > a.next {
+	font-weight: bold; 
+	color: orange;
+	border: 0;
+	text-decoration: underline;
+}
+.pagination > li > a.dots {
+	border: none;
+}
+.pagination > li:hover:not(.active) > a:not(.next):not(.dots){
+	color: orange;
+	border: 1px solid orange;
+}
+
+										/* FOOTER */
+.footer-main {
+	border-top: 1px solid silver;
+	font-family: Poppins,sans-serif;
+	padding: 2.3rem 0;
+}
+.col-8 {
+	min-height: 1px;
+	float: left;
+	position: relative;
+	width: 66.66%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.col-8 > ul {
+	font-size: 0;
+	list-style: none;
+	float: left;
+}
+.col-8 > ul > li {
+	display: inline-block;
+}
+.col-8 > ul > li > a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #7e7e7e;
+}
+.col-8 > ul > li > a:after {
+	content: ' \2022 ';
+	padding: 0 .5rem;
+	color: orange; 
+}
+.col-8 > ul > li > a.last:after {
+	content: none;
+	padding-right:  0;
+}
+.col-8 > ul > li > a > span:hover {
+	color: orange;
+	padding-bottom: 4px;
+	border-bottom: 2px solid orange; 
+}
+.col-4 {
+	min-height: 1px;
+	float: left;
+	position: relative;
+	width: 33.33%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.footer-rights {
+	text-align: right;
+    font-size: 14px;
+    color: #7e7e7e;
+}
