@@ -1,0 +1,461 @@
+@charset "UTF-8";
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: orange !important;
+  box-shadow: inset 0 1px 1px rgba(255, 165, 0, 0.075), 0 0 8px rgba(255, 166, 0, 0.6);
+}
+
+.section-padding-end {
+  padding: 5.3rem 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+.wraper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 75rem;
+}
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fluid:after, .container-fluid:before {
+  content: " ";
+  display: table;
+}
+
+.container-fluid:after {
+  clear: both;
+}
+
+.svg-container {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.svg-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.svg-container--main {
+  height: 8rem;
+}
+
+.svg-container--subpage {
+  width: 13rem;
+  height: 7rem;
+}
+
+.input-style {
+  border: 1px solid lightgray;
+  background: white;
+  height: 4rem;
+  padding: 0.6rem 4.5rem 0.6rem 1.2rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.input-style::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.input-style-button {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: orange;
+  border-radius: 0 5px 5px 0;
+  border: 0;
+  height: 4rem;
+  padding: 16px 40px;
+  font-size: 0.9rem;
+}
+
+.input-style--personal {
+  width: 100%;
+  float: left;
+  padding: 1rem !important;
+  border-radius: 0.3rem;
+  border-color: silver !important;
+}
+.input-style--personal::placeholder {
+  font-size: 12px !important;
+  color: lightgrey;
+}
+
+.footer-main {
+  font-family: Poppins, sans-serif;
+  padding: 2.3rem 0;
+}
+
+.col-8 {
+  min-height: 1px;
+  float: left;
+  position: relative;
+  width: 66.66%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-8 > ul {
+  font-size: 0;
+  list-style: none;
+  float: left;
+}
+.col-8 > ul > li {
+  display: inline-block;
+}
+.col-8 > ul > li > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #7e7e7e;
+}
+.col-8 > ul > li > a > span:hover {
+  color: orange;
+  padding-bottom: 4px;
+  border-bottom: 2px solid orange;
+}
+.col-8 > ul > li > a:after {
+  content: " •";
+  padding: 0 0.5rem;
+  color: orange;
+}
+.col-8 > ul > li > a.last:after {
+  content: none;
+  padding-right: 0;
+}
+
+.col-4 {
+  min-height: 1px;
+  float: left;
+  position: relative;
+  width: 33.33%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-rights {
+  text-align: right;
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+.footer-main--separator {
+  border-top: 1px solid silver;
+}
+
+@media screen and (max-width: 1140px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact > .col-6,
+.contact .col-6-m {
+    width: 100% !important;
+  }
+  .contact .info {
+    padding: 4.5rem 5rem 4.5rem 5rem !important;
+  }
+  .contact .contact-form {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .container {
+    font-size: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1281px) {
+  .boxes .container {
+    font-size: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    width: 75rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    width: 100%;
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .nav-bar.toggle {
+    width: 100% !important;
+  }
+  .nav-bar.toggle > ul {
+    width: 100%;
+  }
+  .nav-bar.toggle > ul > li {
+    padding: 0 0 1rem 0.5rem;
+    float: none !important;
+    display: block !important;
+    text-align: left !important;
+  }
+  .nav-bar.toggle > ul > li:nth-child(2) {
+    padding-top: 2rem;
+  }
+  .nav-bar > ul > li:hover > a.icon:after {
+    content: none;
+  }
+  .nav-bar > ul > li:not(:nth-child(1)) {
+    display: none;
+  }
+  .nav-bar > ul > li:nth-child(1) {
+    display: block !important;
+    padding-top: 42px !important;
+    padding-bottom: 47px !important;
+    padding-right: 20px !important;
+  }
+  .nav-bar > ul > li > a.icon {
+    font-size: 1rem;
+    color: orange;
+    display: block !important;
+    float: right;
+  }
+}
+.content {
+  width: 100%;
+}
+
+.contact:before, .contact:after {
+  content: " ";
+  display: table;
+}
+
+.contact:after {
+  clear: both;
+}
+
+/*Header*/
+.header {
+  min-height: 120px;
+  position: relative;
+  background: black;
+  width: 100%;
+  margin-bottom: 0;
+}
+.header:after {
+  clear: both;
+}
+.header:after, .header:before {
+  content: " ";
+  display: table;
+}
+
+.container:after {
+  clear: both;
+}
+.container:after, .container:before {
+  content: " ";
+  display: table;
+}
+
+.logo {
+  color: white;
+  width: 30%;
+  float: left;
+  display: inline-block;
+}
+
+.nav-bar {
+  width: 70%;
+  float: right;
+  text-align: right;
+}
+.nav-bar > ul {
+  display: inline-block;
+  text-decoration: none;
+}
+.nav-bar > ul > li {
+  padding-top: 42px;
+  padding-bottom: 47px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: inline-block;
+}
+.nav-bar > ul > li > a {
+  text-decoration: none;
+}
+.nav-bar > ul > li > a .list-item p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: inherit;
+  transition: color 0.5s ease-in-out;
+}
+.nav-bar > ul > li > a .list-item .bottom-bar {
+  width: 0%;
+  background: orange;
+  height: 2px;
+  margin-top: 5px;
+  transition: width 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.nav-bar > ul > li > a .list-item.active p {
+  color: orange;
+}
+.nav-bar > ul > li > a .list-item.active .bottom-bar {
+  width: 100%;
+}
+.nav-bar > ul > li:nth-child(1) {
+  display: none;
+}
+.nav-bar > ul > li:hover > a .list-item p {
+  color: orange;
+}
+.nav-bar > ul > li:hover > a .list-item .bottom-bar {
+  width: 100%;
+}
+
+.icon-bar {
+  display: block !important;
+  background-color: orange;
+  border-radius: 5px;
+  width: 22px;
+  height: 2px;
+}
+.icon-bar:not(:nth-child(3)) {
+  margin-bottom: 4px;
+}
+
+/*CONTACT*/
+.contact {
+  position: relative;
+  display: flex;
+}
+.contact .title {
+  color: #585858;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.contact .company-name {
+  font-family: "Poppins", sans-serif;
+  color: #585858;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.contact .info {
+  padding: 4.5rem 3rem 4.5rem 36%;
+}
+.contact .info .row {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.contact .info .col {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}
+.contact .info .col-6 {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 2rem 0;
+  display: inline-block;
+}
+
+.col-6 {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.address {
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: #585858;
+}
+
+.e-mail {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+  color: orange;
+}
+
+/*FORM*/
+.contact-form {
+  display: inline-block;
+}
+
+.control {
+  position: relative;
+}
+
+textarea {
+  text-align: left;
+  margin-top: 20px;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
+  border: 1px solid silver;
+  resize: none;
+  overflow: auto;
+}
+textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: silver;
+}
+
+.submit {
+  font-size: 1rem;
+  margin-left: 5px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  padding: 1rem;
+  color: white;
+  background: orange;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.googleMaps {
+  display: flex;
+  width: 100%;
+  padding-bottom: 75% !important;
+}
+
+.col-6-m {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  float: left;
+  width: 50%;
+}
