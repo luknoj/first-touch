@@ -97,6 +97,18 @@ body {
   font-size: 0.9rem;
 }
 
+.input-style--personal {
+  width: 100%;
+  float: left;
+  padding: 1rem !important;
+  border-radius: 0.3rem;
+  border-color: silver !important;
+}
+.input-style--personal::placeholder {
+  font-size: 12px !important;
+  color: lightgrey;
+}
+
 .footer-main {
   font-family: Poppins, sans-serif;
   padding: 2.3rem 0;
@@ -612,6 +624,11 @@ body {
   font-weight: lighter;
   padding: 2rem 3rem 0 3rem;
   line-height: 1.75;
+}
+
+.svg-img img {
+  width: 100%;
+  height: 100%;
 }
 
 /** What we do **/
