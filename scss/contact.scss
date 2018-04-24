@@ -289,6 +289,9 @@ textarea {
 	background: orange;
 	border-radius: .3rem;
 	border: none;
+	&:focus{
+		outline: none;
+	}
 }
 .googleMaps {
 	display: flex;
