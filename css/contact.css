@@ -109,6 +109,10 @@ body {
   color: lightgrey;
 }
 
+.m-sm-b {
+  margin-bottom: 0.5rem !important;
+}
+
 .footer-main {
   font-family: Poppins, sans-serif;
   padding: 2.3rem 0;
